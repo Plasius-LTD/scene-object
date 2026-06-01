@@ -310,7 +310,14 @@ export function validateSceneObjectManifest(
       valid = false;
     }
 
-    if (!object.bounds || !validateBounds(object.bounds, `${path}.bounds`, issues)) {
+    if (!object.bounds) {
+      pushIssue(issues, {
+        code: "required",
+        path: `${path}.bounds`,
+        message: "Object must define bounds.",
+      });
+      valid = false;
+    } else if (!validateBounds(object.bounds, `${path}.bounds`, issues)) {
       valid = false;
     }
 
@@ -398,7 +405,11 @@ export function validateSceneObjectManifest(
     }
   }
 
-  const objectIds = new Set(objects.map((candidate) => candidate.id));
+  const objectIds = new Set(
+    objects
+      .filter((candidate): candidate is SceneObjectDefinition => Boolean(candidate && typeof candidate === "object"))
+      .map((candidate) => candidate.id),
+  );
   if (Array.isArray(value.stateSnapshots)) {
     for (const [stateIndex, state] of value.stateSnapshots.entries()) {
       const stateValue = state as SceneObjectObjectState;
@@ -498,13 +509,6 @@ export function resolveSceneObjectReferences(
   return { valid: true, issues: [], value: result.value };
 }
 
-export function resolveSceneObjectById(
-  request: SceneObjectResolutionRequest,
-): SceneObjectDefinition | undefined;
-export function resolveSceneObjectById(
-  manifest: SceneObjectManifest,
-  objectId: string,
-): SceneObjectDefinition | undefined;
 export function resolveSceneObjectById(
   requestOrManifest:
     | SceneObjectResolutionRequest

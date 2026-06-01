@@ -17,6 +17,7 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 - **Fixed**
   - Added closed-form validation paths for malformed transforms, attachment references, and snapshot consistency.
+  - Fixed scene object validation so malformed object entries do not crash state reference checks and missing bounds report a validation issue.
 
 - **Security**
   - Validation remains fail-closed for malformed or untrusted object contracts before runtime consumption.
