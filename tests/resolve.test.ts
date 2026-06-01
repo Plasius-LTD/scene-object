@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { resolveSceneObjectById, resolveSceneObjectState, type SceneObjectManifest } from "../src/index.js";
 import { SCENE_OBJECT_SCHEMA_VERSION } from "../src/index.js";
+import { resolveSceneObjectById as resolveSceneObjectByIdFromResolveModule } from "../src/resolve.js";
 
 const manifest: SceneObjectManifest = {
   schemaVersion: SCENE_OBJECT_SCHEMA_VERSION,
@@ -70,11 +71,29 @@ describe("scene object resolution", () => {
     expect(state?.visible).toBe(true);
   });
 
+  it("returns undefined when no state snapshots are available", () => {
+    const state = resolveSceneObjectState(
+      {
+        ...manifest,
+        stateSnapshots: undefined,
+      },
+      "hero-entity",
+    );
+
+    expect(state).toBeUndefined();
+  });
+
   it("returns undefined for missing object", () => {
     const missing = resolveSceneObjectById(manifest, "missing");
     const missingState = resolveSceneObjectState(manifest, "missing");
 
     expect(missing).toBeUndefined();
     expect(missingState).toBeUndefined();
+  });
+
+  it("resolves objects through the resolve module helper", () => {
+    const result = resolveSceneObjectByIdFromResolveModule(manifest, "hero-entity");
+
+    expect(result?.id).toBe("hero-entity");
   });
 });
