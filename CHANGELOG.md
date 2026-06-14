@@ -8,6 +8,20 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+- **Added**
+  - (placeholder)
+
+- **Changed**
+  - (placeholder)
+
+- **Fixed**
+  - (placeholder)
+
+- **Security**
+  - (placeholder)
+
+## [0.1.2] - 2026-06-14
+
 
   - Added `@plasius/scene-object` contracts for transforms, bounds, attachment points, and snapshot state.
   - Added deterministic object validation and state lookup helpers for runtime composition.
@@ -24,4 +38,7 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ---
 
-[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.2...HEAD
+
+
+[0.1.2]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.2
