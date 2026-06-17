@@ -13,6 +13,7 @@ npm install @plasius/scene-object
 This package is controlled by a site-owned feature flag:
 
 - `scene.object.runtime.enabled`
+- Player System interface extensions inherit `isekai.player-system.interface.enabled`
 
 ## Package exports
 
@@ -20,6 +21,8 @@ This package is controlled by a site-owned feature flag:
 - deterministic object validation and manifest creation helpers
 - attachment and attachment-point helpers
 - state lookup helpers
+- Player System extension contracts for target anchors, focus-pane screens, and localized alert markers
+- `validateSceneObjectPlayerSystemManifest()` plus focus/anchor lookup helpers
 
 ## Development
 
@@ -38,3 +41,5 @@ npm run pack:check
 - transforms and bounds must be finite numbers with valid units
 - attachment points and links must reference existing objects/points
 - state visibility and object references must be structurally valid
+- Player System anchors must reference exported object attachment points
+- focus screens must bind to `focus-pane` anchors and declare a bounded presentation variant

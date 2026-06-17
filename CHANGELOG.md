@@ -8,6 +8,9 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+- **Added**
+  - Added Player System interface extension contracts for target anchors, localized alert markers, and focus-screen surfaces under `isekai.player-system.interface.enabled`.
+  - Added validation and lookup helpers for Player System scene-object manifests.
 
   - Added `@plasius/scene-object` contracts for transforms, bounds, attachment points, and snapshot state.
   - Added deterministic object validation and state lookup helpers for runtime composition.
