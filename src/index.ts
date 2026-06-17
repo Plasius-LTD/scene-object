@@ -17,6 +17,17 @@ export {
   type SceneObjectVector3,
 } from "./types.js";
 export {
+  SCENE_OBJECT_PLAYER_SYSTEM_INTERFACE_FLAG_ID,
+  type SceneObjectAnchorDefinition,
+  type SceneObjectAnchorKind,
+  type SceneObjectAnchorVisibility,
+  type SceneObjectFocusScreenDefinition,
+  type SceneObjectPlayerSystemManifest,
+  resolveSceneObjectAnchorById,
+  resolveSceneObjectFocusScreenById,
+  validateSceneObjectPlayerSystemManifest,
+} from "./player-system.js";
+export {
   createSceneObjectManifest,
   resolveSceneObjectById,
   resolveSceneObjectReferences,
