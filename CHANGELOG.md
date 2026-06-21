@@ -9,6 +9,20 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 ## [Unreleased]
 
 - **Added**
+  - (placeholder)
+
+- **Changed**
+  - (placeholder)
+
+- **Fixed**
+  - (placeholder)
+
+- **Security**
+  - (placeholder)
+
+## [0.1.3] - 2026-06-21
+
+- **Added**
   - Added Player System interface extension contracts for target anchors, localized alert markers, and focus-screen surfaces under `isekai.player-system.interface.enabled`.
   - Added validation and lookup helpers for Player System scene-object manifests.
 
@@ -27,4 +41,7 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ---
 
-[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.3...HEAD
+
+
+[0.1.3]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.3
