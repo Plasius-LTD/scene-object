@@ -1,6 +1,6 @@
 {
   "name": "@plasius/scene-object",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Reusable scene-object transforms, bounds, attachment points, and snapshot contracts",
   "type": "module",
   "sideEffects": false,
