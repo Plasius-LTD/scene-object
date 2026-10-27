@@ -8,6 +8,20 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+- **Added**
+  - (placeholder)
+
+- **Changed**
+  - (placeholder)
+
+- **Fixed**
+  - (placeholder)
+
+- **Security**
+  - (placeholder)
+
+## [0.1.12] - 2026-10-27
+
 - Restore push-only validation on the approved quarantined self-hosted runner group, with strict installs and final package admission; preserve hosted OIDC publication.
 
 - **Added**
@@ -179,7 +193,7 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ---
 
-[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.11...HEAD
+[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.12...HEAD
 
 
 [0.1.3]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.3
@@ -191,3 +205,4 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 [0.1.9]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.9
 [0.1.10]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.10
 [0.1.11]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.11
+[0.1.12]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.12
