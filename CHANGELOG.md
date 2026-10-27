@@ -8,6 +8,8 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+- Restore push-only validation on the approved quarantined self-hosted runner group, with strict installs and final package admission; preserve hosted OIDC publication.
+
 - **Added**
   - (placeholder)
 
