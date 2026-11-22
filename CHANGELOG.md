@@ -8,6 +8,20 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+- **Added**
+  - (placeholder)
+
+- **Changed**
+  - (placeholder)
+
+- **Fixed**
+  - (placeholder)
+
+- **Security**
+  - (placeholder)
+
+## [0.1.13] - 2026-11-22
+
 - Refresh supported npm dependency and security tooling baselines; preserve runtime API contracts (weekly maintenance, 2026-11-22).
 
 - **Added**
@@ -195,7 +209,7 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 
 ---
 
-[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.12...HEAD
+[Unreleased]: https://github.com/Plasius-LTD/scene-object/compare/v0.1.13...HEAD
 
 
 [0.1.3]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.3
@@ -208,3 +222,4 @@ The format is based on **[Keep a Changelog](https://keepachangelog.com/en/1.1.0/
 [0.1.10]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.10
 [0.1.11]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.11
 [0.1.12]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.12
+[0.1.13]: https://github.com/Plasius-LTD/scene-object/releases/tag/v0.1.13
